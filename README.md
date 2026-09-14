@@ -1,44 +1,43 @@
 # ECG Signal Acquisition Hardware
 
-Welcome to the hardware repository for my ECG signal acquisition circuit. I designed this analog front-end (AFE) circuit during my undergraduate studies in Biomedical Engineering at the University of Science and Technology (UST) in Aden, Yemen.
+**Biomedical Engineering | UST Aden**
 
-## Project Overview
+Analog front-end (AFE) hardware design for real-time Electrocardiogram (ECG) signal acquisition, developed for integration with embedded microcontroller systems (e.g., ESP32) for arrhythmia classification.
 
-The goal of this project was to build a low-cost, reliable circuit to capture the electrical activity of the heart (ECG) using standard electronic components. I wanted to see clear QRS complexes on an oscilloscope before sending the data to a microcontroller for processing. 
+---
 
-This hardware circuit was the foundation for my later machine learning project, where I classified PVC arrhythmias on an ESP32.
+## 1. Hardware Architecture
 
-## Hardware Design
+The circuit utilizes standard discrete components to amplify microvolt-level cardiac potentials and attenuate physiological/environmental artifacts.
 
-The circuit is built on a breadboard and uses the following main components:
-- **Instrumentation Amplifier (AD620):** Used to amplify the very small microvolt signals from the heart while rejecting common-mode noise like 50 Hz powerline interference.
-- **Operational Amplifiers (TL072 / LM741):** Used to build active filters.
-- **Filters:** I designed a band-pass filter to keep only the useful ECG frequencies and remove baseline wander (low frequencies) and high-frequency noise.
+* **Instrumentation Amplifier:** AD620 configuration for high common-mode rejection ratio (CMRR) to suppress 50 Hz powerline interference.
+* **Active Filters:** TL072 / LM741 operational amplifiers configured as a band-pass filter cascade.
+    * High-pass stage: Attenuates baseline wander and low-frequency motion artifacts.
+    * Low-pass stage: Attenuates high-frequency electromyographic (EMG) noise.
 
-## Hardware Testing and Results
+---
 
-To prove the circuit works, I tested it on myself and used a Hantek digital oscilloscope to view the output. The results were very good. The ECG signal is clear, and you can easily identify the P wave, QRS complex, and T wave.
+## 2. Experimental Results
 
-Here is a picture of the complete hardware setup:
+The hardware prototype was validated using a Hantek digital oscilloscope, confirming clear delineation of the P wave, QRS complex, and T wave morphology.
 
+### 2.1 Hardware Prototype
 ![Hardware Setup](assets/hardware_setup.jpeg)
+*Figure 1: Breadboard implementation of the ECG AFE.*
 
-Here are close-up photos of the oscilloscope screen showing the clean ECG signal:
-
+### 2.2 Oscilloscope Validation
 ![Oscilloscope ECG Signal 1](assets/oscilloscope_ecg_1.jpeg)
+*Figure 2: Real-time ECG signal trace demonstrating distinct QRS complexes.*
 
 ![Oscilloscope ECG Signal 2](assets/oscilloscope_ecg_2.jpeg)
+*Figure 3: Detailed view of the acquired waveform.*
 
-### Video Demonstration
-I also recorded a short video showing the ECG signal updating in real-time on the oscilloscope. You can watch it here:
-- **YouTube Video:** [Watch ECG Hardware Demo Video](https://youtu.be/GUkwhOJBexI?si=P7ldS8w9NdSfrwVb)
+### 2.3 Video Demonstration
+* **Hardware Validation:** [Live Oscilloscope ECG Trace (YouTube)](https://youtu.be/GUkwhOJBexI?si=P7ldS8w9NdSfrwVb)
 
-## Why This Matters
+---
 
-Building this circuit taught me a lot about practical electronics, signal noise, and real-world biomedical engineering. By getting a clean signal in hardware first, it made the software processing and machine learning steps much easier later on.
+## 3. Contact
 
-## Contact
-
-If you have any questions about the circuit design or want to collaborate, feel free to contact me:
-- **Email:** [a.kh.hatem@gmail.com](mailto:a.kh.hatem@gmail.com)
-- **LinkedIn:** [Abdulaziz Hatem](https://linkedin.com/in/abdulazizhatem)
+* **Email:** [a.kh.hatem@gmail.com](mailto:a.kh.hatem@gmail.com)
+* **LinkedIn:** [Abdulaziz Hatem](https://linkedin.com/in/abdulazizhatem)
