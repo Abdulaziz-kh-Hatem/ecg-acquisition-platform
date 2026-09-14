@@ -30,8 +30,8 @@ Here are close-up photos of the oscilloscope screen showing the clean ECG signal
 ![Oscilloscope ECG Signal 2](assets/oscilloscope_ecg_2.jpeg)
 
 ### Video Demonstration
-I also recorded a short video showing the ECG signal updating in real-time on the oscilloscope. You can download and watch it here:
-- [Download ECG Hardware Demo Video (12 MB)](assets/ecg_demo.mp4)
+I also recorded a short video showing the ECG signal updating in real-time on the oscilloscope. You can watch it here:
+- **YouTube Video:** [Watch ECG Hardware Demo Video](https://youtu.be/GUkwhOJBexI?si=P7ldS8w9NdSfrwVb)
 
 ## Why This Matters
 
