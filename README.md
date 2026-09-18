@@ -18,7 +18,7 @@ Analog front-end (AFE) hardware design for real-time Electrocardiogram (ECG) sig
 
 ## 1. Hardware Architecture
 
-The circuit utilizes standard discrete components to amplify microvolt-level cardiac potentials and attenuate physiological/environmental artifacts.
+The circuit uses standard discrete components to amplify microvolt-level cardiac potentials and remove motion artifacts and environmental noise.
 
 * **Instrumentation Amplifier:** AD620 configuration for high common-mode rejection ratio (CMRR) to suppress 50 Hz powerline interference.
 * **Active Filters:** TL072 / LM741 operational amplifiers configured as a band-pass filter cascade.
