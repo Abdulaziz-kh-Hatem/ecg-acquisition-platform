@@ -1,6 +1,16 @@
-# ECG Signal Acquisition Hardware
+<div align="center">
+  <h1>ECG Signal Acquisition Hardware</h1>
+
+  <a href="https://youtu.be/GUkwhOJBexI?si=P7ldS8w9NdSfrwVb">
+    <img src="https://img.shields.io/badge/Watch_ECG_Acquisition_Demonstration-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Project Demonstration" />
+  </a>
+</div>
+
+<br>
 
 **Biomedical Engineering | UST Aden**
+
+This project was developed as part of the requirements for the Bioinstrumentation II course.
 
 Analog front-end (AFE) hardware design for real-time Electrocardiogram (ECG) signal acquisition, developed for integration with embedded microcontroller systems (e.g., ESP32) for arrhythmia classification.
 
