@@ -49,5 +49,5 @@ The hardware prototype was validated using a Hantek digital oscilloscope, confir
 
 ## 3. Contact
 
-* **Email:** [a.kh.hatem@gmail.com](mailto:a.kh.hatem@gmail.com)
+* **Email:** [a.kh.hatem@gmail.com](mailto:a.kh.hatem@gmail.com) | [a.hatem@student.ust.edu](mailto:a.hatem@student.ust.edu)
 * **LinkedIn:** [Abdulaziz Hatem](https://linkedin.com/in/abdulazizhatem)
